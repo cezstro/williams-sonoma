@@ -1,0 +1,68 @@
+/*  ==========================
+	- Website: Williams Sonoma
+	- Date:     01/29/2018
+	- Author:   Raheem Hardy   
+----------------------------
+   CSS DIRECTORY
+	1. =GLOBAL SETTINGS
+	2. =HEADER
+	3. =NAV
+	4. =HERO
+	5. =CONTENT
+    6. =FOOTER
+    7. =MEDIA QUERIES
+ ============================= */
+
+/* === GLOBAL SETTINGS === */
+
+body {font-family: Helvetica,Arial,sans-serif; color:grey;}
+div.container-fluid {max-width: 1010px;}
+
+/* === HEADER === */
+
+/* === NAV === */
+.navbar-nav {position: relative; background: #2d2d2d; text-align: center}
+.navbar-nav li {display: inline-block; vertical-align: bottom; font-size: 11px;}
+.navbar-nav .nav-item a {color: #f8f8f8!important;white-space: nowrap}
+.navbar-nav li:last-child{border-left: 1px solid white;background-color:#283756}
+
+/* === HERO === */
+.jumbotron {padding: 2em 1.5em;background-color: #fff;margin-bottom: 0}
+.jumbotron img{width:100%}
+
+/* thumbnails */
+.thmb {cursor: pointer;} 
+
+/* === CONTENT === */
+main nav .breadcrumb{font-size: 12px;background-color:#fff}
+main nav .breadcrumb li a {color: grey}
+.nav-item li.breadcrumb-item:before {content: ">";color: grey;margin: 0 5px;}
+.breadcrumb-item+.breadcrumb-item::before {padding: 0 5px; color: #ccc; content: "\003E";}
+.breadcrumb-item.active {font-weight: normal; color:#000}
+.item-price { font-size: 18px;color:#000}
+#item-quantity{width: 15%}
+#hero-content p, #hero-content ul {font-size: 13px;padding: 10px 15px;margin: 0;}
+#hero-content h1{font-family: "Times New Roman",Georgia,serif; color: #000; font-size: 20px; margin:20px 0}
+#cart_btn .btn {padding:0}
+#cart_btn .btn:focus {
+    box-shadow: none;
+}
+
+/* accordion */
+.accordion{border-top: 1px solid #000; padding-top: 1px; border-bottom: 1px solid #000;}
+.accordion-block{position: relative;width: 100%;height: auto;background: url(../../assets/img/arrow-collapsed.png) left center no-repeat;}
+.accordion-block a{display: block;padding: 10px 15px 10px 20px;text-decoration: none;color: #555;border-top: 1px solid #ddd;font-size: 18px; font-family: "Times New Roman",Times,Georgia,serif; -webkit-transition:all 0.2s linear;-moz-transition:all 0.2s linear;transition:all 0.2s linear;}
+.accordion-block:first a{ border-top: none;}
+.accordion-block > a i{float: right;margin-top: 2px;}
+.accordion-block > a.active{background: url(../../assets/img/arrow-expanded.png) left center no-repeat;}
+.content{background-color: #fff;display:none;}
+
+  /* === FOOTER === */
+ footer {font-size: 11px;padding: 20px;text-align: center;margin: 20px 0;background-color:#f1f1f1;border-top:1px solid grey}
+ footer p{margin: 0 auto;}
+ footer a{color: #6d6d6d}
+  /* === MEDIA QUERIES === */
+
+@media(min-width: 1000px) {
+    nav{height:30px}
+}
